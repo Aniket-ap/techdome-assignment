@@ -1,0 +1,64 @@
+.filter-container {
+  margin: 10px;
+  padding: 1rem;
+  width: 200px;
+  height: auto;
+  position: sticky;
+  top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: -2px 8px 26px -3px rgba(107, 107, 107, 0.75);
+  -webkit-box-shadow: -2px 8px 26px -3px rgba(107, 107, 107, 0.75);
+  -moz-box-shadow: -2px 8px 26px -3px rgba(107, 107, 107, 0.75);
+}
+
+.filter-container p {
+  text-align: center;
+}
+
+hr {
+  width: 150px;
+  margin: auto;
+}
+
+.year-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
+  margin: 10px;
+}
+
+.year-links .link {
+  background-color: rgb(153, 212, 153);
+  border: none;
+  padding: 3px 6px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.links {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links .link {
+  background-color: rgb(153, 212, 153);
+  border: none;
+  padding: 3px 6px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.year-links .active {
+  background-color: rgb(68, 213, 68);
+}
+
+.links .active {
+  background-color: rgb(68, 213, 68);
+}

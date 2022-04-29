@@ -1,0 +1,32 @@
+.card {
+  background-color: #fff;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 16px;
+  line-height: 30px;
+  box-shadow: 11px 13px 17px -1px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 11px 13px 17px -1px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 11px 13px 17px -1px rgba(0, 0, 0, 0.17);
+}
+
+.img {
+  background-color: rgb(246, 246, 246);
+  text-align: center;
+}
+
+.card p {
+  font-weight: 500;
+}
+
+.m-name {
+  font-size: 20px;
+  color: darkblue;
+  font-weight: 600;
+}
+
+.span {
+  font-weight: 600;
+  margin-left: 2px;
+}

@@ -1,0 +1,8 @@
+.launchdetails-container {
+  margin: 10px;
+  width: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

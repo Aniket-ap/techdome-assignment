@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+}
+
+.launch-content {
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
