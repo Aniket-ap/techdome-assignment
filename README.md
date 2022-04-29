@@ -2,6 +2,12 @@
 
 [click here](https://launch-spacex-data.netlify.app/) to visit the app.
 
+![Screen shot](https://github.com/Aniket-ap/techdome-assignment/blob/main/src/assets/ss1.jpg?raw=true)
+
+![screen shot](https://github.com/Aniket-ap/techdome-assignment/blob/main/src/assets/ss2.jpg?raw=true)
+
+![screen shot](https://github.com/Aniket-ap/techdome-assignment/blob/main/src/assets/ss3.jpg?raw=true)
+
 ## stack details and library used
 ```bash
 React js
