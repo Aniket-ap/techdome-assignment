@@ -62,3 +62,10 @@ hr {
 .links .active {
   background-color: rgb(68, 213, 68);
 }
+
+
+@media screen and (max-width: 600px) {
+  .filter-container{
+    width: auto;
+  }
+}

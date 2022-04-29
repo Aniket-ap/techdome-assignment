@@ -6,3 +6,9 @@
   flex-wrap: wrap;
   flex-grow: 1;
 }
+
+@media screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+}
