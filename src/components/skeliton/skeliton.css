@@ -1,0 +1,57 @@
+.sidebar-card {
+  margin-top: 20px;
+}
+.sidebar-card .big-square {
+  height: 100px;
+  width: 200px;
+  margin: auto;
+}
+
+.sidebar-card .name,
+.sidebar-card .status {
+  min-width: 100px;
+  min-height: 24px;
+}
+
+.sidebar-card > * {
+  margin: 16px 0px;
+}
+
+.launch-card {
+  margin-top: 20px;
+}
+
+.launch-card .pic-square {
+  margin-left: 10px;
+  height: 200px;
+  width: auto;
+}
+
+.launch-card .name,
+.launch-card .status {
+  min-width: 100px;
+  min-height: 24px;
+}
+
+.launch-card > * {
+  margin: 16px 0px;
+}
+
+.skeleton {
+  background-color: #938f8f;
+  animation: skeleton-animation 1s infinite ease-in-out;
+}
+
+@keyframes skeleton-animation {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}

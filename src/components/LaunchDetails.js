@@ -2,8 +2,9 @@ import React, { useMemo } from "react";
 import { useParams } from "react-router-dom";
 import LaunchDetailCard from "./LaunchDetailCard";
 import "./launchDetails.css";
+import LaunchDetailsContainer from "./skeliton/LaunchDetailsContainer";
 
-const LaunchDetails = ({ launches }) => {
+const LaunchDetails = ({ launches, isLoading }) => {
   const params = useParams();
 
   const filterLaunches = useMemo(() => {
@@ -24,13 +25,21 @@ const LaunchDetails = ({ launches }) => {
   }, [launches, params]);
 
   return (
-    <section className="launchdetails-container">
-      {filterLaunches.map((launch, index) => (
-        <React.Fragment key={index}>
-          <LaunchDetailCard launch={launch} />
-        </React.Fragment>
-      ))}
-    </section>
+    <>
+      {isLoading ? (
+        <LaunchDetailsContainer />
+      ) : (
+        <>
+          <section className="launchdetails-container">
+            {filterLaunches.map((launch, index) => (
+              <React.Fragment key={index}>
+                <LaunchDetailCard launch={launch} />
+              </React.Fragment>
+            ))}
+          </section>
+        </>
+      )}
+    </>
   );
 };
 
