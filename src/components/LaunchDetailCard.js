@@ -5,7 +5,7 @@ const LaunchDetailCard = ({ launch }) => {
   return (
     <div className="card">
       <div className="img">
-        <img src={launch?.links?.mission_patch_small} alt="img" loading="lazy" />
+        <img src={launch?.links?.mission_patch_small} alt="img" />
       </div>
       <p className="m-name">
         <span className="span">
