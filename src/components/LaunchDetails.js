@@ -13,13 +13,15 @@ const LaunchDetails = ({ launches, isLoading }) => {
         return launch.launch_year === params.id;
       }
       if (params.successLaunchId) {
-        return launch.launch_success.toString() === params.successLaunchId;
+        return String(launch.launch_success) === params.successLaunchId;
       }
       if (params.successLandId) {
         return (
-          launch.rocket?.cores?.land_success.toString() === params.successLandId
+          String(launch.rocket?.first_stage.cores[0].land_success) ===
+          params.successLandId
         );
       }
+
       return launches;
     });
   }, [launches, params]);

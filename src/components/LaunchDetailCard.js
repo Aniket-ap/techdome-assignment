@@ -22,13 +22,16 @@ const LaunchDetailCard = ({ launch }) => {
       <p>
         Successfull Lunch:
         <span className="span">
-          {launch?.launch_success ? "True" : "False"}
+          {String(launch?.launch_success) === "true" && "True"}
+          {String(launch?.launch_success) === "false" && "False"}
         </span>
       </p>
       <p>
         Successfull Landing:
         <span className="span">
-          {launch?.rocket?.cores?.land_success ? "True" : "False"}
+          {String(launch?.rocket?.first_stage.cores[0].land_success) === "true"
+            ? "True"
+            : "False"}
         </span>
       </p>
     </div>
